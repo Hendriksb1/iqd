@@ -154,7 +154,7 @@
 
 ### Updates
 
-* **Note** Remove the `src/templates` directory and place the templates directly in `src` to keep assets files path sycned between src and dist paths for better development UX.
+* **Note** Remove the `src/templates` directory and place the templates directly in `src` to keep assets files path sycned between src and docs paths for better development UX.
 * Update loading priority - compromise in favor of loading `SVG` background images in SASS/PostCSS instead of `SVG` Fonts.
   * To configure loading SVG fonts instead of SVG background add `svg` extension in `url-loader` for fonts extensions.
 * Update demo HTML template
@@ -1028,7 +1028,7 @@ js minimization features
 * Support for `Webpack 4`
 * Support for `Babel 7`
   * Added `.babelrc` file for preset definitions
-* Cleanup of dist directory upon build
+* Cleanup of docs directory upon build
 
 ### Removed
 

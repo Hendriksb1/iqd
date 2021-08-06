@@ -1,5 +1,5 @@
 language: node_js
-dist: xenial
+docs: xenial
 os: linux
 node_js:
   - node
@@ -16,7 +16,7 @@ deploy:
   skip_cleanup: true
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: dist
+  local_dir: docs
   on:
     branch: master
     node_js: 'lts/*'
