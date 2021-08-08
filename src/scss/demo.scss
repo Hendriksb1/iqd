@@ -16,15 +16,42 @@ header {
 }
 
 
-.advert {
+.ad {
   min-height: 416px;
 
+  &__start {
+    position: relative;
+    top: -60px; 
+  }
+
+  &__end {
+    position: relative;
+    top: -160px; 
+  }
+
   &__content {
-    position: sticky !important;
-    position: -webkit-sticky !important;
-    z-index: 111;
     top: 55px;
     margin-bottom: 20px;
+
+    &--sticky {
+      position: sticky;
+      position: -webkit-sticky;
+      z-index: 111;
+    }
+
+    &--hidden {
+      opacity: 0;
+    }
+
+    &--fixed {
+      position: fixed;
+      width: 500px;
+      height: 200px;
+      top: 155px;
+      left: 50%;
+      margin-top: -100px; /* Negative half of height. */
+      margin-left: -250px; /* Negative half of width. */
+    }
   }
 
   &__googleAds {
