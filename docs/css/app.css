@@ -261,6 +261,7 @@ header {
 
 .ad {
   min-height: 416px;
+  background-color: #e98b8b;
 }
 .ad__start {
   position: relative;
@@ -269,6 +270,9 @@ header {
 .ad__end {
   position: relative;
   top: -160px;
+}
+.ad--hidden {
+  opacity: 0;
 }
 .ad__content {
   top: 55px;
@@ -300,6 +304,37 @@ header {
   text-align: center;
   width: 300px;
   height: 250px;
+}
+.ad__header {
+  opacity: 0;
+  background-color: #f0d4d4;
+  border: 0pt none;
+  margin: auto;
+  text-align: end;
+  width: 300px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.ad--active .ad__header {
+  opacity: 1;
+}
+.ad__close {
+  margin: 0 5px 0 0;
+  font-size: 25px;
+  line-height: 1;
+  height: 25px;
 }
 
 main {
